@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>my_paint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="canva.js"></script>
+</head>
+
+<body>
+    <div class="canva">
+        <div>
+            <h2>My Paint</h2>
+            <canvas id="mycanvas" width="1000" height="700"></canvas>
+        </div>
+        <div class="button">
+            <button class="pencil">pencil</button>
+            <button class="ligne">ligne</button>
+            <button class="rectangle">rectangle</button>
+            <button class='cercle'>cercle</button>
+            <button class="reset">reset</button>
+            <button class="gomme">gomme</button>
+            <button id="save">save</button>
+        </div>
+        <div class="button">
+            <div class="bothcolor">
+                <div class="coloration">
+                    <label for='color'>Color</label>
+                    <input name="color" id="color" type="color"></div>
+                <div class="coloration"> <label for='fillcolor'>Fill Color </label>
+                    <input name="fillcolor" id="fillcolor" type="color"></div>
+            </div>
+            <div><label for="volume">width:</label>
+                <div class="width"></div>
+            </div>
+            <input id='widthbrush' type="range" name="volume" min="1" max="30">
+            <label for="text">Text</label>
+            <div><input name="text" id="text" type="text"><button class="textadd">+</button></div>
+            <div><label for='fontsize'>fontsize:</label>
+                <div class="fontsize"></div>
+            </div>
+            <input id='fontsize' type="range" name="fontsize" min="1" max="100">
+            <div><label for='positionX'>X :</label>
+                <div class="positionX"></div>
+            </div>
+            <input id='positionX' type="range" name="positionX" min="1" max="1000">
+            <div><label for='positionY'>Y :</label>
+                <div class="positionY"></div>
+            </div>
+            <input id='positionY' type="range" name="positionY" min="1" max="700">
+            <div><label for="horizon">Symétrie horizontale</label>
+                <input id="horizon" type="checkbox" name="horizon"></div>
+            <div><label for="verticale">Symétrie verticale</label>
+                <input id="verticale" type="checkbox" name="verticale"></div>
+        </div>
+    </div>
+    </div>
+    <div class="upload">
+        <form id="form1" runat="server">
+            <label for='charger'>Upload</label>
+            <input type='file' id="charger" name='charger' />
+            <img id="blah" src="#" alt="your image" />
+        </form>
+</body>
+
+</html>

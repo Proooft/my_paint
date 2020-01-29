@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.canva {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+#mycanvas {
+    border: 1px solid grey;
+}
+
+#text {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    /*nécessaire pour Chrome */
+    padding: 0;
+    /* nécessaire pour IE */
+    font: inherit;
+    /* même rendu suivant font document */
+    outline: none;
+    color: black;
+    /* sert pour couleur de référence, via currentColor, pour le curseur */
+    background: #CCC;
+    /* sert pour couleur de fond de la zone de déplacement */
+    box-sizing: border-box;
+    /* même modèle de boîte pour tous */
+    border: none;
+
+}
+
+.textadd {
+    text-align: center;
+    background: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 75px;
+}
+
+button:active {
+    border: 3px solid rgb(70, 70, 70);
+    color: rgb(70, 70, 70);
+}
+
+button {
+    margin-bottom: 8px;
+    background-image: linear-gradient(60deg, rgb(255, 82, 241), rgb(65, 68, 255));
+    border: 3px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.pencil {
+    /* background-color: rgb(70, 70, 70); */
+    color: rgb(70, 70, 70);
+    border: 3px solid rgb(70, 70, 70);
+}
+
+#color,
+#fillcolor {
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    border: none;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.coloration {
+    display: flex;
+    flex-direction: column;
+}
+
+.bothcolor {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#widthbrush,
+#positionX,
+#positionY,
+#fontsize {
+    -webkit-appearance: none;
+    /*nécessaire pour Chrome */
+    padding: 0;
+    /* nécessaire pour IE */
+    font: inherit;
+    /* même rendu suivant font document */
+    outline: none;
+    color: #069;
+    /* sert pour couleur de référence, via currentColor, pour le curseur */
+    opacity: .8;
+    background: #CCC;
+    /* sert pour couleur de fond de la zone de déplacement */
+    box-sizing: border-box;
+    /* même modèle de boîte pour tous */
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.upload {
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.width,
+.positionX,
+.positionY,
+.fontsize {
+    display: inline
+}
